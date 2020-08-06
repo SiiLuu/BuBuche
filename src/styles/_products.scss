@@ -1,0 +1,25 @@
+.products {
+    background-color: $darkBlue;
+    padding-bottom: 4%;
+    h1 {
+        color: white;
+    }
+    .columns {
+        .column {
+            .items {
+                background-color: white;
+                text-align: center;
+                h2 {
+                    font-size: 200%;
+                    color: black;
+                }
+                &:hover {
+                    background-color: #FCFADD;
+                    h2 {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

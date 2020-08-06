@@ -1,0 +1,202 @@
+.header {
+  top: 84px;
+  width: 100%;
+  height: 70px;
+  line-height: 52px;
+  background-color: #2b9155;
+  position: absolute;
+  z-index: 999;
+  font-size: 125%;
+}
+
+.header .header-logo {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  float: left;
+  margin-left: 10%;
+}
+
+.header .header-menu {
+  float: right;
+  margin-right: 10%;
+}
+
+.header .header-menu a {
+  margin-right: 25px;
+  color: white;
+}
+
+.header .header-menu a i {
+  margin-right: 10px;
+}
+
+.header .header-menu a:hover {
+  color: #bdc3c7;
+}
+
+.header .navbar-burger {
+  background-color: #2b9155;
+  border: none;
+  outline: none;
+  margin-right: 5%;
+  margin-top: 1.75%;
+  color: white;
+}
+
+.header .navbar-burger span {
+  height: 2px;
+}
+
+.header #navMenu {
+  font-size: -25%;
+}
+
+.fixedHead {
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+#banner {
+  margin-top: -25px;
+  background-image: url("../assets/bgBanner.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner .columns {
+  height: 85px;
+  color: #ecf0f1;
+  background-color: #2c3e50;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#banner .columns #headcall {
+  height: 85px;
+  background-color: #d35400;
+}
+
+#banner .columns #headcall a {
+  color: white;
+  text-decoration: underline;
+}
+
+#banner .columns #headcall a:hover {
+  color: #bdc3c7;
+}
+
+#banner .columns #headcall i {
+  margin-top: 5%;
+}
+
+#banner .columns i {
+  font-size: 125%;
+}
+
+#banner .container h1 {
+  color: white;
+}
+
+#banner .container .aws-btn {
+  --button-primary-color: #475472;
+  --button-primary-color-dark: #2a3143;
+  --button-primary-color-light: #d4d9e4;
+  --button-primary-color-hover: #424e6a;
+  --button-primary-color-active: #3d4b6d;
+  --button-primary-border: none;
+}
+
+.about .columns {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .columns .about-single-element {
+  padding: 5%;
+  text-align: center;
+}
+
+.about .columns .about-single-element p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.products {
+  background-color: #2c3e50;
+  padding-bottom: 4%;
+}
+
+.products h1 {
+  color: white;
+}
+
+.products .columns .column .items {
+  background-color: white;
+  text-align: center;
+}
+
+.products .columns .column .items h2 {
+  font-size: 200%;
+  color: black;
+}
+
+.products .columns .column .items:hover {
+  background-color: #FCFADD;
+}
+
+.products .columns .column .items:hover h2 {
+  text-decoration: underline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.heading-site {
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-bottom: 1.5%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 300%;
+}
+
+/*
+RESPONSIVE
+*/
+@media screen and (max-width: 1024px) {
+  #computer_navbar {
+    display: none;
+  }
+  #tophead {
+    display: none;
+  }
+  .header {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #responsive_navbar {
+    display: none;
+  }
+  .header {
+    line-height: 70px;
+  }
+  #banner .container {
+    margin-top: 10%;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .banner-content h2 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,56 @@
+@import './variables';
+
+@import './header';
+@import './banner';
+@import './about';
+@import './products';
+
+html {
+    scroll-behavior: smooth;
+}
+
+.heading-site {
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    text-align: center;
+    font-family: $myFont;
+    font-size: 300%;
+}
+
+/*
+RESPONSIVE
+*/
+
+@media screen and (max-width: 1024px) {
+    #computer_navbar {
+        display: none;
+    }
+    #tophead {
+        display: none;
+    }
+    .header {
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #responsive_navbar {
+        display: none;
+    }
+    .header {
+        line-height: 70px;
+    }
+    #banner {
+        .container {
+            margin-top: 10%;
+            margin-left: 20%;
+        }
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .banner-content h2 {
+        display: none;
+    }
+}

@@ -1,0 +1,44 @@
+#banner {
+    margin-top: -25px;
+    background-image: url('../assets/bgBanner.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .columns {
+        height: 85px;
+        color: #ecf0f1;
+        background-color: $darkBlue;
+        align-items: center;
+        text-align: center;
+        #headcall {
+            height: 85px;
+            background-color: #d35400;
+            a {
+                color: white;
+                text-decoration: underline;
+                &:hover {
+                    color: #bdc3c7;
+                }
+            }
+            i {
+                margin-top: 5%;
+            }
+        }
+        i {
+            font-size: 125%;
+        }
+    }
+    .container {
+        h1 {
+            color: white;
+        }
+        .aws-btn {
+            --button-primary-color: #475472;
+            --button-primary-color-dark: #2a3143;
+            --button-primary-color-light: #d4d9e4;
+            --button-primary-color-hover: #424e6a;
+            --button-primary-color-active: #3d4b6d;
+            --button-primary-border: none;
+        }
+    }
+}
