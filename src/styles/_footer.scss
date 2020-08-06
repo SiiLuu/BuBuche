@@ -1,0 +1,40 @@
+#footer {
+    .container {
+        margin-bottom: 3%;
+        text-align: center;
+        h2 {
+            font-size: 175%;
+        }
+        h3 {
+            font-size: 115%;
+        }
+        h4 {
+            font-size: 105%;
+        }
+        #footcall {
+            margin-top: 1.5%;
+            margin-bottom: 2%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 325px;
+            height: 100px;
+            color: white;
+            background-color: #d35400;
+            a {
+                color: white;
+                text-decoration: underline;
+                &:hover {
+                    color: #bdc3c7;
+                }
+            }
+            i {
+                margin-top: 5%;
+            }
+        }
+        #footLogo {
+            font-weight: bold;
+        }
+    }
+}

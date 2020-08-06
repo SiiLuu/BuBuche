@@ -136,6 +136,8 @@
 }
 
 .products .columns .column .items {
+  border: 2px solid black;
+  border-radius: 20px;
   background-color: white;
   text-align: center;
 }
@@ -151,6 +153,54 @@
 
 .products .columns .column .items:hover h2 {
   text-decoration: underline;
+}
+
+#footer .container {
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+#footer .container h2 {
+  font-size: 175%;
+}
+
+#footer .container h3 {
+  font-size: 115%;
+}
+
+#footer .container h4 {
+  font-size: 105%;
+}
+
+#footer .container #footcall {
+  margin-top: 1.5%;
+  margin-bottom: 2%;
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 325px;
+  height: 100px;
+  color: white;
+  background-color: #d35400;
+}
+
+#footer .container #footcall a {
+  color: white;
+  text-decoration: underline;
+}
+
+#footer .container #footcall a:hover {
+  color: #bdc3c7;
+}
+
+#footer .container #footcall i {
+  margin-top: 5%;
+}
+
+#footer .container #footLogo {
+  font-weight: bold;
 }
 
 html {
@@ -171,7 +221,7 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #1abc9c;
+  background-color: gray;
   border: 2px solid #F5F5F5;
 }
 

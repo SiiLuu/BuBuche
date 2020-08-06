@@ -31,7 +31,7 @@ const Banner = () => (
             livré à domicile <br />
             en toute simplicité
           </h1>
-          <AwesomeButton type="primary">Découvrez mes produits</AwesomeButton>
+          <AwesomeButton href="/#productsList" type="primary">Découvrez mes produits</AwesomeButton>
         </div>
 			</div>
 			</section>
