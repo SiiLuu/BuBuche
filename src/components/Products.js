@@ -4,7 +4,7 @@ import trade from '../assets/satisfait_ou_rembourse.png';
 import Tilt from 'react-parallax-tilt';
 
 const Products = () => (
-  <div id="productsList" className="block products">
+  <div id="productsList" className="products">
 		<h1 className="title heading-site">Mes produits</h1>
     <div className="container">
       <div className="columns is-multiline is-variable">

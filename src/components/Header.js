@@ -29,13 +29,17 @@ class Header extends Component {
               BuBuche
             </a>
             <nav className="header-menu">
-              <a href="/#">
-                <i className="fa fa-user-o" aria-hidden="true"></i>
-                Connexion
+              <a href="/#engagements">
+                <i className="fa fa-check-circle-o" aria-hidden="true"></i>
+                Engagements
               </a>
-              <a href="/#">
-                <i className="fa fa-shopping-basket" aria-hidden="true"></i>
-                Panier
+              <a href="/#productsList">
+                <i className="fa fa-eur" aria-hidden="true"></i>
+                Produits
+              </a>
+              <a href="/#footer">
+                <i className="fa fa-user" aria-hidden="true"></i>
+                Contact
               </a>
             </nav>
           </div>
@@ -54,10 +58,18 @@ class Header extends Component {
               </button>
               <div className={burgerActive ? "navbar-menu is-active": "navbar-menu"} id="navMenu">
                 <div className="navbar-dropdown">
-                  <a className="navbar-item" href="/#">Accueil</a>
-                  <a className="navbar-item" href="/#">À propos</a>
-                  <a className="navbar-item" href="/#">Mes travaux</a>
-                  <a className="navbar-item" href="/#">Contact</a>
+                  <a className="navbar-item" href="/#engagements" onClick={this.toggleClass}>
+                    <i className="fa fa-check-circle-o" aria-hidden="true"></i>
+                    Engagements
+                  </a>
+                  <a className="navbar-item" href="/#productsList" onClick={this.toggleClass}>
+                    <i className="fa fa-eur" aria-hidden="true"></i>
+                    Produits
+                  </a>
+                  <a className="navbar-item" href="/#footer" onClick={this.toggleClass}>
+                    <i className="fa fa-user" aria-hidden="true"></i>
+                    Contact
+                  </a>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import trade from '../assets/satisfait_ou_rembourse.png';
 
 const About = () => (
-  <div className="block">
+  <div className="block" id="engagements">
 		<h2 className="title heading-site">Mes engagements</h2>
 		<div className="container about">
 			<div className="columns is-multiline is-variable is-8">
