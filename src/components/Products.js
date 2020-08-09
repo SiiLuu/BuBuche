@@ -23,7 +23,7 @@ const Products = () => (
             <Tilt>
               <div className="items">
                 <img src={trade} alt="satisfait ou remboursé" />
-                <h2>Chêne</h2>
+                <h2>Autres</h2>
               </div>
             </Tilt>
           </a>

@@ -1,0 +1,28 @@
+#contact {
+    background-color: #FCFBF7;
+    #infos {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #2C2F37;
+        h1 {
+            padding: 5%;
+            color: #B58F56;
+        }
+        h2 {
+            color: white;
+            padding: 5%;
+            i {
+                margin-right: 5%;
+            }
+        }
+        a {
+            color: #2B9155;
+            &:hover {
+                color: #233F34;
+            }
+        }
+    }
+}

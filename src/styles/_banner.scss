@@ -1,9 +1,162 @@
+@-webkit-keyframes change-image {
+    0% {
+        background-image: url('../assets/bgBanner1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20% {
+        background-image: url('../assets/bgBanner2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40% {
+        background-image: url('../assets/bgBanner3.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60% {
+        background-image: url('../assets/bgBanner4.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80% {
+        background-image: url('../assets/bgBanner5.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background-image: url('../assets/bgBanner6.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@-moz-keyframes change-image {
+    0% {
+        background-image: url('../assets/bgBanner1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20% {
+        background-image: url('../assets/bgBanner2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40% {
+        background-image: url('../assets/bgBanner3.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60% {
+        background-image: url('../assets/bgBanner4.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80% {
+        background-image: url('../assets/bgBanner5.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background-image: url('../assets/bgBanner6.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@-o-keyframes change-image {
+    0% {
+        background-image: url('../assets/bgBanner1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20% {
+        background-image: url('../assets/bgBanner2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40% {
+        background-image: url('../assets/bgBanner3.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60% {
+        background-image: url('../assets/bgBanner4.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80% {
+        background-image: url('../assets/bgBanner5.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background-image: url('../assets/bgBanner6.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@keyframes change-image {
+    0% {
+        background-image: url('../assets/bgBanner1.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    20% {
+        background-image: url('../assets/bgBanner2.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    40% {
+        background-image: url('../assets/bgBanner3.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    60% {
+        background-image: url('../assets/bgBanner4.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    80% {
+        background-image: url('../assets/bgBanner5.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100% {
+        background-image: url('../assets/bgBanner6.jpg');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 #banner {
     margin-top: -25px;
-    background-image: url('../assets/bgBanner.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    animation: change-image 60s infinite alternate;
     .columns {
         height: 85px;
         color: #ecf0f1;

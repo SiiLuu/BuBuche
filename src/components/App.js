@@ -6,6 +6,7 @@ import Banner from './Banner';
 import About from './About';
 import Products from './Products';
 import Footer from './Footer';
+import Contact from './Contact'
 
 const App = () => (
   <div className="App">
@@ -13,6 +14,7 @@ const App = () => (
     <Banner />
     <About />
     <Products />
+    <Contact />
     <Footer />
   </div>
 );

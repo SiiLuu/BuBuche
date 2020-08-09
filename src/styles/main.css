@@ -61,12 +61,88 @@
   position: fixed;
 }
 
+@-webkit-keyframes change-image {
+  0% {
+    background-image: url("../assets/bgBanner1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  20% {
+    background-image: url("../assets/bgBanner2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background-image: url("../assets/bgBanner3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  60% {
+    background-image: url("../assets/bgBanner4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background-image: url("../assets/bgBanner5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../assets/bgBanner6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes change-image {
+  0% {
+    background-image: url("../assets/bgBanner1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  20% {
+    background-image: url("../assets/bgBanner2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background-image: url("../assets/bgBanner3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  60% {
+    background-image: url("../assets/bgBanner4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background-image: url("../assets/bgBanner5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../assets/bgBanner6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 #banner {
   margin-top: -25px;
-  background-image: url("../assets/bgBanner.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  -webkit-animation: change-image 60s infinite alternate;
+          animation: change-image 60s infinite alternate;
 }
 
 #banner .columns {
@@ -114,18 +190,22 @@
   --button-primary-border: none;
 }
 
-.about .columns {
+#engagements {
+  background-color: #FCFBF7;
+}
+
+#engagements .about .columns {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.about .columns .about-single-element {
+#engagements .about .columns .about-single-element {
   padding: 5%;
   text-align: center;
 }
 
-.about .columns .about-single-element p {
+#engagements .about .columns .about-single-element p {
   text-align: left;
   margin-top: 20px;
 }
@@ -160,6 +240,7 @@
 }
 
 #footer {
+  padding-top: 2%;
   background-color: #FCFBF7;
 }
 
@@ -237,6 +318,44 @@
 
 #footer a:hover {
   color: #bdc3c7;
+}
+
+#contact {
+  background-color: #FCFBF7;
+}
+
+#contact #infos {
+  margin-left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #2C2F37;
+}
+
+#contact #infos h1 {
+  padding: 5%;
+  color: #B58F56;
+}
+
+#contact #infos h2 {
+  color: white;
+  padding: 5%;
+}
+
+#contact #infos h2 i {
+  margin-right: 5%;
+}
+
+#contact #infos a {
+  color: #2B9155;
+}
+
+#contact #infos a:hover {
+  color: #233F34;
 }
 
 html {

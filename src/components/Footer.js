@@ -7,7 +7,6 @@ import Map from './Map'
 
 const Footer = () => (
   <div className="block" id="footer">
-		<h1 className="title heading-site">Contact</h1>
     <div className="container">
       <h2>Une question, un doute, passer commande ?</h2>
       <div id="footcall">
