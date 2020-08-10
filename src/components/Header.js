@@ -12,6 +12,7 @@ class Header extends Component {
     this.setState({ burgerActive: !burgerActive });
   }
 
+  // Active and desactive scroll header fixed
   componentDidMount() {
     document.addEventListener("scroll", () => {
       const fixed = window.scrollY > 80 ? true : false;
@@ -25,7 +26,7 @@ class Header extends Component {
       <div className="block">
         <header className={fixedNavbar ? "header fixedHead": "header"}>
           <div id="computer_navbar">
-            <a href="/#" className="header-logo">
+            <a href="/" className="header-logo">
               BuBuche
             </a>
             <nav className="header-menu">

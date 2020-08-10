@@ -1,8 +1,5 @@
 import React from 'react';
 
-import AwesomeButton from 'react-awesome-button/src/components/AwesomeButton';
-import "react-awesome-button/dist/styles.css";
-
 import Map from './Map'
 
 const Footer = () => (
@@ -29,9 +26,7 @@ const Footer = () => (
           <div className="items">
             <h4>Route de marquixanes<br />Le vieux chêne d'Eus<br />Eus, 66500<br /><br /></h4>
             <h4><strong>Je suis aussi sur les réseaux !</strong><br /><br /></h4>
-            <AwesomeButton href="https://fontawesome.com/v4.7.0/icon/facebook" type="primary">
-              Facebook
-            </AwesomeButton>
+            <button class="button is-link">Facebook</button>
           </div>
         </div>
       </div>

@@ -2,7 +2,25 @@ import React from 'react';
 
 const Contact = () => (
   <div id="contact">
-		<h2 className="title heading-site">Contact</h2>
+    <div className="columns is-gapless" id="topInfo">
+			<div className="column about-single-element">
+				<i className="fa fa-exchange" aria-hidden="true"></i>
+				<p>Satisfait ou échangé</p>
+			</div>
+			<div className="column about-single-element">
+				<i className="fa fa-tree" aria-hidden="true"></i>
+				<p>Bois 100% français</p>
+			</div>
+			<div className="column about-single-element">
+				<i className="fa fa-truck" aria-hidden="true"></i>
+				<p>Livraison gratuite</p>
+			</div>
+			<div className="column about-single-element" id="headcall">
+				<i className="fa fa-phone" aria-hidden="true"></i>
+				<p>Appellez moi au 07 00 00 00 00 ou <a href="/#">contactez-moi ici</a></p>
+			</div>
+		</div>
+    <h2 className="title heading-site">Contact</h2>
 		<div className="container">
 			<div className="columns is-multiline is-variable">
 				<div className="column">

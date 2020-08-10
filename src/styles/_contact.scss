@@ -1,5 +1,34 @@
 #contact {
+    margin-top: -25px;
+    padding-bottom: 3%;
     background-color: #FCFBF7;
+    h2 {
+        margin-top: 3%;
+    }
+    #topInfo {
+        height: 85px;
+        color: #ecf0f1;
+        background-color: $darkBlue;
+        align-items: center;
+        text-align: center;
+        #headcall {
+            height: 85px;
+            background-color: #d35400;
+            a {
+                color: white;
+                text-decoration: underline;
+                &:hover {
+                    color: #bdc3c7;
+                }
+            }
+            i {
+                margin-top: 5%;
+            }
+        }
+        i {
+            font-size: 125%;
+        }
+    }
     #infos {
         margin-left: 50%;
         transform: translateX(-50%);
