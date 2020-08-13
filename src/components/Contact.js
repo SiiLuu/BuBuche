@@ -23,8 +23,8 @@ const Contact = () => (
     <h2 className="title heading-site">Contact</h2>
 		<div className="container">
 			<div className="columns is-multiline is-variable">
-				<div className="column">
-        <div className="field">
+				<div className="column" id="formContact">
+          <div className="field">
             <label className="label">Sujet</label>
             <div className="control">
               <div className="select">

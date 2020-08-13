@@ -44,6 +44,21 @@ RESPONSIVE
     #tophead {
         display: none;
     }
+    #contact {
+        padding-top: 5%;
+        #formContact {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        #topInfo {
+            display: none;
+        }
+    }
+    #footer {
+        .items {
+            margin-top: 3%;
+        }
+    }
     .header {
         top: 0;
     }
@@ -60,6 +75,12 @@ RESPONSIVE
         .container {
             margin-top: 10%;
             margin-left: 20%;
+        }
+    }
+    #footer {
+        .items {
+            margin-top: 50%;
+            transform: translateY(-10%);
         }
     }
 }

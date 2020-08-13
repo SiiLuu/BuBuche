@@ -25,7 +25,12 @@
             height: 100px;
             color: white;
             background-color: #d35400;
-            a {
+            button {
+                font-size: 105%;
+                background-color: #d35400;
+                border: none;
+                outline: none;
+                cursor: pointer;
                 color: white;
                 text-decoration: underline;
                 &:hover {
@@ -38,10 +43,6 @@
         }
         #footLogo {
             font-weight: bold;
-        }
-        .items {
-            margin-top: 50%;
-            transform: translateY(-10%);
         }
         #map {
             border: 1px solid black;

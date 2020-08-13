@@ -161,6 +161,7 @@
 }
 
 #banner .columns #headcall button {
+  font-size: 105%;
   background-color: #d35400;
   border: none;
   outline: none;
@@ -280,12 +281,17 @@
   background-color: #d35400;
 }
 
-#footer .container #footcall a {
+#footer .container #footcall button {
+  font-size: 105%;
+  background-color: #d35400;
+  border: none;
+  outline: none;
+  cursor: pointer;
   color: white;
   text-decoration: underline;
 }
 
-#footer .container #footcall a:hover {
+#footer .container #footcall button:hover {
   color: #bdc3c7;
 }
 
@@ -295,12 +301,6 @@
 
 #footer .container #footLogo {
   font-weight: bold;
-}
-
-#footer .container .items {
-  margin-top: 50%;
-  -webkit-transform: translateY(-10%);
-          transform: translateY(-10%);
 }
 
 #footer .container #map {
@@ -332,7 +332,7 @@
 }
 
 #contact h2 {
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 #contact #topInfo {
@@ -440,6 +440,19 @@ RESPONSIVE
   #tophead {
     display: none;
   }
+  #contact {
+    padding-top: 5%;
+  }
+  #contact #formContact {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #contact #topInfo {
+    display: none;
+  }
+  #footer .items {
+    margin-top: 3%;
+  }
   .header {
     top: 0;
   }
@@ -455,6 +468,11 @@ RESPONSIVE
   #banner .container {
     margin-top: 10%;
     margin-left: 20%;
+  }
+  #footer .items {
+    margin-top: 50%;
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
   }
 }
 

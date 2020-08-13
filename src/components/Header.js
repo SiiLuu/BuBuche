@@ -38,14 +38,10 @@ class Header extends Component {
                 <i className="fa fa-eur" aria-hidden="true"></i>
                 Produits
               </a>
-              <a href="/#footer">
-                <i className="fa fa-user" aria-hidden="true"></i>
-                Contact
-              </a>
             </nav>
           </div>
           <div id="responsive_navbar">
-              <a href="/#" className="header-logo">
+              <a href="/" className="header-logo">
                 BuBuche
               </a>
               <button

@@ -15,7 +15,8 @@ class App extends Component {
 
   handlerActiveContact = () => {
     let { ActiveContact } = this.state
-    ActiveContact = !ActiveContact
+    ActiveContact = true
+    window.scrollTo(0, 0)
     this.setState({ ActiveContact })
   }
 
@@ -28,7 +29,7 @@ class App extends Component {
         { !ActiveContact && <About /> }
         { !ActiveContact && <Products /> }
         { ActiveContact && <Contact /> }
-        <Footer />
+        <Footer handler={this.handlerActiveContact} />
       </div>
     );
   }
