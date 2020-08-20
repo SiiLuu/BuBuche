@@ -8,6 +8,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "axios": "^0.19.2",
     "customize-cra": "^1.0.0",
     "google-map-react": "^2.0.4",
     "leaflet": "^1.6.0",
@@ -17,7 +18,7 @@
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
     "react-parallax-tilt": "^1.4.61",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
     "styled-components": "^5.1.1",
     "typescript": "^3.9.7"
   },

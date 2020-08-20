@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+
 import '../styles/main.css';
+
+import API from '../utils/API'
 
 import Header from './Header';
 import Banner from './Banner';
@@ -18,6 +21,12 @@ class App extends Component {
     ActiveContact = true
     window.scrollTo(0, 0)
     this.setState({ ActiveContact })
+  }
+
+  async componentDidMount() {
+    API.get('/')
+      .then((res) => console.log(res.data.message))
+      .catch(() => console.log("Error express server !"))
   }
 
   render() {
