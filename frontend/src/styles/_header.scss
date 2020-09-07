@@ -16,7 +16,12 @@
     .header-menu {
         float: right;
         margin-right: 10%;
-        a {
+        button, a {
+            cursor: pointer;
+            font-size: 105%;
+            border: none;
+            outline: none;
+            background-color: #2b9155;
             margin-right: 25px;
             color: white;
             i {

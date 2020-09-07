@@ -10,17 +10,29 @@ import About from './About';
 import Products from './Products';
 import Footer from './Footer';
 import Contact from './Contact'
+import Auth from './Auth';
 
 class App extends Component {
   state = {
-    ActiveContact: false
+    ActiveContact: false,
+    ActiveLogin: false
   }
 
   handlerActiveContact = () => {
-    let { ActiveContact } = this.state
+    let { ActiveContact, ActiveLogin } = this.state
+    console.log("tamer")
     ActiveContact = true
+    ActiveLogin = false
     window.scrollTo(0, 0)
-    this.setState({ ActiveContact })
+    this.setState({ ActiveContact, ActiveLogin })
+  }
+
+  handlerActiveLogin = () => {
+    let { ActiveContact, ActiveLogin } = this.state
+    ActiveContact = false
+    ActiveLogin = true
+    window.scrollTo(0, 0)
+    this.setState({ ActiveContact, ActiveLogin })
   }
 
   async componentDidMount() {
@@ -30,14 +42,15 @@ class App extends Component {
   }
 
   render() {
-    const { ActiveContact } = this.state
+    const { ActiveContact, ActiveLogin } = this.state
     return (
       <div className="App">
-        <Header />
-        { !ActiveContact && <Banner handler={this.handlerActiveContact} /> }
-        { !ActiveContact && <About /> }
-        { !ActiveContact && <Products /> }
+        <Header handler={this.handlerActiveLogin} />
+        { !ActiveContact && !ActiveLogin &&  <Banner handler={this.handlerActiveContact} /> }
+        { !ActiveContact && !ActiveLogin && <About /> }
+        { !ActiveContact && !ActiveLogin && <Products /> }
         { ActiveContact && <Contact /> }
+        { ActiveLogin && <Auth handler={this.handlerActiveContact} /> }
         <Footer handler={this.handlerActiveContact} />
       </div>
     );

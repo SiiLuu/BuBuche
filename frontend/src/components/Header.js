@@ -30,13 +30,13 @@ class Header extends Component {
               BuBuche
             </a>
             <nav className="header-menu">
-              <a href="/#engagements">
-                <i className="fa fa-check-circle-o" aria-hidden="true"></i>
-                Engagements
-              </a>
-              <a href="/#productsList">
-                <i className="fa fa-eur" aria-hidden="true"></i>
-                Produits
+              <button onClick={this.props.handler}>
+                <i className="fas fa-user-tag"></i>
+                Mon compte
+              </button>
+              <a href="/">
+                <i className="fas fa-shopping-cart"></i>
+                Panier
               </a>
             </nav>
           </div>

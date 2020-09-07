@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-import AwesomeButton from 'react-awesome-button/src/components/AwesomeButton';
-import 'react-awesome-button/dist/themes/theme-blue.css';
+import Login from './Login';
+import Signup from './Signup';
 
-class Banner extends Component {
+class Auth extends Component {
   render() {
     return (
       <div>
@@ -27,19 +27,12 @@ class Banner extends Component {
 		  	  	</div>
 		  	  </div>
 		  	  <div className="hero-body">
-            <div className="container">
-              <h1 className="title is-1">
-                Votre bois de chauffage <br />
-                livré à domicile <br />
-                en toute simplicité
-              </h1>
-              <AwesomeButton href="/#productsList" type="primary">Découvrez mes produits</AwesomeButton>
-            </div>
-		  	  </div>
+					<Login />
+			  </div>
 		  	</section>
 		  </div>
     );
   }
 }
 
-export default Banner;
+export default Auth;

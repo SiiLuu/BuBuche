@@ -21,16 +21,21 @@
   margin-right: 10%;
 }
 
-.header .header-menu a {
+.header .header-menu button, .header .header-menu a {
+  cursor: pointer;
+  font-size: 105%;
+  border: none;
+  outline: none;
+  background-color: #2b9155;
   margin-right: 25px;
   color: white;
 }
 
-.header .header-menu a i {
+.header .header-menu button i, .header .header-menu a i {
   margin-right: 10px;
 }
 
-.header .header-menu a:hover {
+.header .header-menu button:hover, .header .header-menu a:hover {
   color: #bdc3c7;
 }
 
