@@ -4,11 +4,23 @@ import Login from './Login';
 import Signup from './Signup';
 
 class Auth extends Component {
+  state = {
+    Switch: true
+  }
+
+  handlerSwitch = () => {
+    let { Switch } = this.state
+    Switch = !Switch
+    window.scrollTo(0, 0)
+    this.setState({ Switch })
+  }
+
   render() {
+    const { Switch } = this.state
     return (
       <div>
-		  	<section className="hero is-fullheight" id="banner">
-		  	  <div className="columns is-gapless" id="tophead">
+		  	<section className="hero is-fullheight" id="auth">
+		  	  <div className="columns is-gapless" id="topinfo">
 		  	  	<div className="column about-single-element">
 		  	  		<i className="fa fa-exchange" aria-hidden="true"></i>
 		  	  		<p>Satisfait ou échangé</p>
@@ -27,8 +39,8 @@ class Auth extends Component {
 		  	  	</div>
 		  	  </div>
 		  	  <div className="hero-body">
-					<Login />
-			  </div>
+            { !Switch ? <Signup /> : <Login /> }
+			    </div>
 		  	</section>
 		  </div>
     );

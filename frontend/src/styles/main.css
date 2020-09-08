@@ -406,6 +406,136 @@
   color: #233F34;
 }
 
+@-webkit-keyframes change-image {
+  0% {
+    background-image: url("../assets/bgBanner1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  20% {
+    background-image: url("../assets/bgBanner2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background-image: url("../assets/bgBanner3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  60% {
+    background-image: url("../assets/bgBanner4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background-image: url("../assets/bgBanner5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../assets/bgBanner6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes change-image {
+  0% {
+    background-image: url("../assets/bgBanner1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  20% {
+    background-image: url("../assets/bgBanner2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background-image: url("../assets/bgBanner3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  60% {
+    background-image: url("../assets/bgBanner4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background-image: url("../assets/bgBanner5.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url("../assets/bgBanner6.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+#auth {
+  margin-top: -25px;
+  -webkit-animation: change-image 60s infinite alternate;
+          animation: change-image 60s infinite alternate;
+}
+
+#auth #topinfo {
+  height: 85px;
+  color: #ecf0f1;
+  background-color: #2c3e50;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#auth #topinfo #headcall {
+  height: 85px;
+  background-color: #d35400;
+}
+
+#auth #topinfo #headcall a {
+  color: white;
+  text-decoration: underline;
+}
+
+#auth #topinfo #headcall a:hover {
+  color: #bdc3c7;
+}
+
+#auth #topinfo #headcall i {
+  margin-top: 5%;
+}
+
+#auth #topinfo i {
+  font-size: 125%;
+}
+
+#login {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  background-color: #FCFBF7;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
+}
+
+#login .column {
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -20,7 +20,6 @@ class App extends Component {
 
   handlerActiveContact = () => {
     let { ActiveContact, ActiveLogin } = this.state
-    console.log("tamer")
     ActiveContact = true
     ActiveLogin = false
     window.scrollTo(0, 0)
